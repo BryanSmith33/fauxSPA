@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>test</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script src="test.js"></script>
+</head>
+<body>
+<ul class="nav">
+    <li><a class="arrow" href="#cart">Cart</a></li>
+    <li><a href="#shipping">Shipping</a></li>
+    <li><a href="#payment">Payment</a></li>
+</ul>
+
+<div class="slide" id="cart">
+    <div class="content">
+        <div class="col-md-offset-2 col-md-4 col-sm-12 productDescription">
+            <div class="item">
+                <img class="pull-left" src="http://content.backcountry.com/images/items/900/SFC/SFC004F/RD.jpg" alt="bag image" />
+                <div class="details">Surftech Rusty Dozer Surfboard</div>
+                <div class="details">$769.95</div>
+                <div class="details"><a href="#">Remove</a></div>
+            </div>
+            <div class="item">
+                <img class="pull-left" src="http://content.backcountry.com/images/items/900/SFC/SFC004F/RD.jpg" alt="bag image" />
+                <div class="details">Surftech Rusty Dozer Surfboard</div>
+                <div class="details">$769.95</div>
+                <div class="details"><a href="#">Remove</a></div>
+            </div>
+            <div class="item">
+                <img class="pull-left" src="http://content.backcountry.com/images/items/900/SFC/SFC004F/RD.jpg" alt="bag image" />
+                <div class="details">Surftech Rusty Dozer Surfboard</div>
+                <div class="details">$769.95</div>
+                <div class="details"><a href="#">Remove</a></div>
+            </div>
+            <div class="item">
+                <img class="pull-left" src="http://content.backcountry.com/images/items/900/SFC/SFC004F/RD.jpg" alt="bag image" />
+                <div class="details">Surftech Rusty Dozer Surfboard</div>
+                <div class="details">$769.95</div>
+                <div class="details"><a href="#">Remove</a></div>
+            </div>
+            <div class="item">
+                <img class="pull-left" src="http://content.backcountry.com/images/items/900/SFC/SFC004F/RD.jpg" alt="bag image" />
+                <div class="details">Surftech Rusty Dozer Surfboard</div>
+                <div class="details">$769.95</div>
+                <div class="details"><a href="#">Remove</a></div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-12 productPrice">
+            <table style="width:100%">
+                <tr>
+                    <td>Subtotal:</td>
+                    <td class="pull-right">$769.95</td>
+                </tr>
+                <tr>
+                    <td>Discount:</td>
+                    <td class="pull-right">$165.99</td>
+                </tr>
+                <tr>
+                    <td>Total:</td>
+                    <td class="pull-right">$603.96</td>
+                </tr>
+            </table>
+        </div>
+        <div class="discounts col-md-offset-2 col-md-8 col-sm-12">
+            <div class="discountCode">
+                <a href="#">Discount Code</a>
+                <input type="text" placeholder="Discount Code" />
+            </div>
+            <div class="giftCard">
+                <a href="#">Gift Card</a>
+                <input type="text" placeholder="Gift Card" />
+            </div>
+        </div>
+        <div class="col-sm-12 buttonDiv">
+            <button class="submit"><a href="#shipping">continue</a></button>
+        </div>
+    </div>
+</div>
+<div class="slide" id="shipping">
+    <div class="content">
+        <div class="col-md-offset-3 col-md-3 col-sm-12 shippingAddress">
+            <h3>Shipping Address</h3>
+            <form>
+                <div class="group">
+                    <input type="text" class="inputMove" id="firstName" required/>
+                    <label for="firstName">first name</label>
+                </div>
+                <div class="group">
+                    <input type="text" class="inputMove" id="lastName" required/>
+                    <label for="lastName">last name</label>
+                </div>
+                <div class="group">
+                    <input type="text" class="inputMove" id="address1" required/>
+                    <label for="address1">address</label>
+                </div>
+                <div class="group">
+                    <input type="text" class="inputMove" id="address2" required/>
+                    <label for="address2">address</label>
+                </div>
+                <div class="group sideBySide">
+                    <input type="text" class="inputMove halfInput" id="zipCode" required/>
+                    <label class="small" for="zipCode">zip code</label>
+                </div>
+                <div class="group sideBySide">
+                    <div class="zipMessage sideBySide">We'll use this to look up your city and state!</div>
+                </div>
+                <div class="zipError">Error retrieving city and state</div>
+                <div class="group">
+                    <input type="text" class="inputMove" id="city" required/>
+                    <label for="city">city</label>
+                </div>
+                <div class="group">
+                    <input type="text" class="inputMove" id="state" required/>
+                    <label for="state">state</label>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-3 col-sm-12">
+            <h3>Shipping Method</h3>
+            <div class="shippingMethods">
+                <input type="radio" name="shipping" checked="checked" id="option1" />
+                <label for="option1">Option 1</label>
+                <input type="radio" name="shipping" id="option2" />
+                <label for="option2">Option 2</label>
+                <input type="radio" name="shipping" id="option3" />
+                <label for="option3">Option 3</label>
+                <input type="radio" name="shipping" id="option4" />
+                <label for="option4">Option 4</label>
+            </div>
+        </div>
+        <div class="col-sm-12 buttonDiv">
+            <button class="submit"><a href="#payment">continue</a></button>
+        </div>
+    </div>
+</div>
+<div class="slide" id="payment">
+    <div class="content">
+        <div class="col-md-offset-3 col-md-3 col-sm-12 payment">
+            <h3>Payment</h3>
+            <form>
+                <div class="group">
+                    <input type="text" class="inputMove" id="nameOnCard" required/>
+                    <label for="nameOnCard">name on card</label>
+                </div>
+                <div class="group">
+                    <input type="number" class="inputMove" id="cardNumber" required/>
+                    <label for="cardNumber">card number</label>
+                </div>
+                <div class="group">
+                    <label>expiration</label>
+                </div>
+                <div class="group sideBySide">
+                <label class="expiration" for="cvv">expiration</label>
+                    <select class="month" name="months">
+                        <option value="0">January</option>
+                        <option value="1">February</option>
+                        <option value="2">March</option>
+                        <option value="3">April</option>
+                        <option value="4">May</option>
+                        <option value="5">June</option>
+                        <option value="6">July</option>
+                        <option value="7">August</option>
+                        <option value="8">September</option>
+                        <option value="9">October</option>
+                        <option value="10">November</option>
+                        <option value="11">December</option>
+                    </select>
+                    <select class="year" name="months">
+
+                    </select>
+                </div>
+                <div class="group sideBySide">
+                    <input type="text" class="inputMove halfInput" id="cvv" required/>
+                    <label class="small" for="cvv">cvv</label>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-3 col-sm-12">
+            <h3>Shipping Address</h3>
+
+        </div>
+        <div class="col-sm-12 buttonDiv">
+            <button class="submit"><a href="#thankyou">submit</a></button>
+        </div>
+    </div>
+</div>
+<div class="slide" id="thankyou">
+    <div class="content">
+        <h2>Thank You Bryan!</h2>
+        <p>3 wolf moon snackwave raw denim fanny pack polaroid gluten-free farm-to-table aesthetic, godard hammock chartreuse neutra blog. Semiotics kickstarter you probably haven't heard of them vegan occupy raclette offal pour-over, church-key disrupt
+            selvage brunch chartreuse authentic
+        </p>
+    </div>
+</div>
+</body>
+</html>
